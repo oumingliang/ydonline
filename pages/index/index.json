@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#ff6f18",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "跃动在线",
+ "enablePullDownRefresh": true
+}

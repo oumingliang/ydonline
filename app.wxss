@@ -1,0 +1,166 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/**app.wxss**/
+/* .scroll-view-h{
+  width: 100%;
+  height: calc(100vh - 100rpx);
+} */
+/* 公用勿改，勿删 */
+	/* 结构类 */
+.yg-box{
+   padding: 24rpx;
+ }
+.fx-cell {
+    display: flex;
+}
+.fx-cell-bd {
+    flex: 1;
+}
+.fx-jc-ct {
+    justify-content:center;
+}
+.fx-ai-ct {
+    align-items: center;
+}
+.fx-jc-sb{
+  justify-content: space-between
+}
+.fx-fd-cl {
+  flex-direction: column;
+}
+	/* 结构类 END*/
+.mt24{
+  margin-top: 24rpx !important;
+}
+.mt12{
+  margin-top: 12rpx;
+}
+.mr24{
+  margin-right: 24rpx;
+}
+.text-blue{
+  color: #4f76ec !important;
+}
+.text-red{
+  color: #e64c4c !important;
+}
+.text-orgin{
+  color: #e9993a !important;
+}
+.text-gray{
+  color: #666 !important;
+}
+.text-light-gray{
+  color: #999 !important;
+}
+.text-light-dark{
+  color: #333 !important;
+}
+.text-center{
+  text-align: center
+}
+.fs24{
+  font-size: 24rpx
+}
+.fs26{
+  font-size: 26rpx
+}
+.fs28{
+  font-size: 28rpx
+}
+.fs30{
+  font-size: 30rpx
+}
+.fs32{
+  font-size: 32rpx
+}
+.fs36{
+  font-size: 36rpx
+}
+.text-deal {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+  line-height: 1.3
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.nowrap{
+  white-space: nowrap;
+}
+.bd-bottom{
+  border-bottom: 1rpx solid #eee;
+}
+.bd-top{
+  border-top: 1rpx solid #eee;
+}
+.bd-area{
+  border-top: 10px solid #f5f5f5;
+}
+
+.circle-btn{
+  position: fixed;
+  bottom: 200rpx;
+  right: 38rpx;
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  background: #4f76ec;
+  flex-direction: column;
+  font-size: 26rpx;
+  padding: 24rpx;
+}
+
+.circle-btn text{
+  line-height: 1
+}
+.block{
+  display: block
+}
+
+/* 重置按钮样式（去默认）*/
+.reset-btn{
+  background: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: inherit
+}
+.reset-btn::after{
+  border: none;
+}
+.reset-btn:active{
+  opacity: 0.7
+}
+button[class="reset-btn"][disabled]{
+  background: none;
+}
+.wxname{
+  color: #576b95;
+}
+.wxcontent{
+  color: #252525;
+}
+.wxtime{
+  color: #b1b1b1;
+}
+/* 公用勿改，勿删 END*/

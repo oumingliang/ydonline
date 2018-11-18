@@ -1,0 +1,110 @@
+<!--pages/notice/releaseNotice.wxml-->
+
+<view class='wrap'>
+  <!-- <view class='section-block section-2'>
+    <view class='item'>
+      <view class='descrition-title'>通知标题</view>
+      <input class="input-1" placeholder-class="content-placeholder" value="{{notice.title}}" maxlength='50' data-type='title' placeholder='请输入通知标题' bindinput="inputtitle"></input>
+      <view class='input-number'>{{number1}}/50</view>
+    </view>
+  </view> -->
+
+  <view class='section-block section-2'>
+    <view class='item'>
+      <view class='descrition-title'>分享一下你的心情吧</view>
+
+      <textarea placeholder-class="content-placeholder" class="content input-2" value="{{notice.content}}" maxlength='500' placeholder='发个友善的动态见证当下' bindinput='detail'></textarea>
+
+      <view class='input-number'>{{account}}/500</view>
+      <view class='upload-box'>
+
+
+        <view wx:for="{{imageurl}}" wx:key="{{index}}" class="upload-item">
+          <image src="{{item}}" mode="aspectFill" class="upload-img" data-index="{{index}}" bindtap="prview"></image>
+          <image data-index="{{index}}" src="../../assets/images/widget/picDelete.png" class='delete' bindtap="deleteImage"></image>
+        </view>
+
+        <view class="upload-item upload-btn" bindtap="didPressChooesImage">
+          <image class='cross-icon' src="../../assets/images/widget/picUpload.png"></image>
+          <text class='tip'>添加图片</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+  <view class='section-block section-4'>
+    <button  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" type='primary' class='btn'>发布</button>
+  </view>
+</view>
+
+
+
+
+
+
+<!-- 
+<view>
+    <view class="section_title">
+        <view>通知标题</view>
+        <textarea placeholder-class="phcolor"  placeholder="请输入通知标题" maxlength='50'  data-type='title' bindinput="inputtitle"  value="{{notice.title}}"/>
+        <view class="number">{{number1}}/50</view>
+    </view>
+ <view class="border_bottom"></view>
+  <view class='content_wrap section_title'>
+        <view class='content_top'>
+              <view>通知描述</view>
+              <textarea  placeholder-class="phcolor"   class="content" value="{{notice.content}}" maxlength='500' placeholder='请输入通知内容详情信息（不输入，则不显示）' bindinput='detail'></textarea>
+            <view class='number'>
+              <text>{{account}}/500</text>
+            </view>
+        </view>
+ </view> 
+
+
+
+      <view class='content_bottom'>
+       <view class='uploadimage'>
+           <image src="../../assets/images/widget/picUpload.png" bindtap="chooseimage" class="upload"></image>
+           <text class='tishi'>添加图片</text>
+      </view>
+            <view wx:for="{{imageurl}}" wx:key="{{index}}" class="image_upload"> 
+              <image src="{{item}}" mode="aspectFill" class="pic"></image>
+              <image data-index="{{index}}" src="../../assets/images/widget/picDelete.png" class='delete' bindtap="deleteImage"></image>
+           </view>
+      </view>   
+  
+
+ <view class="border_bottom"></view>
+  <view class='section section_button'>
+       <button bindtap='preview'>编辑完成,预览一下看看效果</button>
+ </view>
+</view> -->
+
+
+
+
+<!-- <view>
+    <view class='title'>
+    <input type='text' placeholder-class="phcolor"  placeholder='请输入通知标题' value='{{notice.title}}' maxlength="50" bindinput="inputtitle"></input>
+    </view>
+    <view class='notice'>
+    <textarea class="info" placeholder-class="phcolor"  placeholder='请输入通知内容详细信息（不输入，则不显示）' maxlength="500" bindinput='detail' value='{{notice.content}}'></textarea>
+    <text class='account'>{{account}}/500</text>
+    
+       <view class='content_bottom'>
+       <view class='uploadimage'>
+           <image src="../../assets/images/widget/picUpload.png" bindtap="chooseimage" class="upload"></image>
+           <text class='tishi'>添加图片</text>
+      </view>
+            <view wx:for="{{imageurl}}" wx:key="{{index}}" class="image_upload"> 
+              <image src="{{item}}" mode="aspectFill" class="pic"></image>
+              <image data-index="{{index}}" src="../../assets/images/widget/picDelete.png" class='delete' bindtap="deleteImage"></image>
+           </view>
+        </view>   
+   </view>
+<view>
+<button bindtap='preview' class='button'>编辑完成，预览一下看看效果</button>
+</view>
+
+</view> -->

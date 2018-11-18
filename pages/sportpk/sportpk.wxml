@@ -1,0 +1,37 @@
+<!--pages/sportpk/sportpk.wxml-->
+<view>
+
+ <view class='head' >
+  <button class='buttonhide' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 
+<image src="../../assets/tx.png" class='userinfo-avatar-replace'  mode="cover"></image>
+  
+  </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <view class="userinfo-nickname white text-deal">{{userInfo.nickName}}</view>
+    </block>
+    <view class='count white center'>您今天已经运动了{{todaysportcount}}步，来pk一下吧！</view>
+  </view>
+
+<view >
+  <view class='pk1'>
+  <button open-type='share' class='share'>选择一个聊天</button>
+  <view class='tishi center'>你可以和朋友进行步数实时PK</view>
+  </view>
+  <view class='pk2' wx:for="{{sharegroupdata}}" >
+    <text class="groupname">群聊{{index+1}}</text>
+  <view class='group'  wx:for="{{item}}">
+
+  <text>{{index+1}}</text>
+    <image class='group_tx' src="../../assets/tx.png"   mode="cover" wx:if="{{item.avatarUrl==undefined||item.avatarUrl==null}}"></image>
+   <image class='group_tx' src="{{item.avatarUrl}}" mode="cover" wx:if="{{item.avatarUrl}}"></image>
+    <text class='group_name text-deal' wx:if="{{item.avatarUrl==undefined||item.avatarUrl==null}}">匿名</text>
+    <text class='group_name text-deal' wx:if="{{item.nickname}}">{{item.nickname}}</text>
+   <text class='groupsportcount'>{{item.todaysportcount}}</text>
+
+  </view>
+  </view>
+
+</view>
+
+</view>

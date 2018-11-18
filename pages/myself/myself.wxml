@@ -1,0 +1,27 @@
+<!--pages/myself/myself.wxml-->
+<view>
+  <view >
+    <button class='buttonhide' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 
+    <image src="../../assets/tx.png" class='userinfo-avatar-replace'  mode="cover"></image>
+    </button>
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <view class="userinfo-nickname wxname text-deal">{{userInfo.nickName}}</view>
+    </block>
+  </view>
+  <view class='nav' style='padding-bottom:5%'>
+     <view class='list' bindtap='querymynotice'>
+        <view class='center'>{{noticeaccount}}</view>
+        <text class='wxtime' >动态</text>
+     </view>
+     <view class='list list2'>
+        <view class='center'>{{3}}</view>
+        <text class='wxtime'>打卡天数</text>
+     </view>
+  </view>
+</view>
+
+
+
+
+

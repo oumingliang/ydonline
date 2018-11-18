@@ -1,0 +1,140 @@
+var formatMillis = function (millis) {
+  if (!millis) {
+    return "";
+  }
+
+  var date = getDate(millis);
+
+  var now = getDate();
+  // 和当前时间的分钟差
+  var diffMinute = (now.getTime() - date.getTime()) / 60000;
+  //今天零点
+  var today = getDate(now.getFullYear(), now.getMonth(), now.getDate());
+  // 今天零点和现在的分钟差
+  var todayFar = (now.getTime() - today.getTime()) / 60000;
+
+  if (diffMinute < 1) {
+    // 1分钟内
+    return "刚刚";
+  }
+  if (diffMinute < 60) {
+    // 1小时内
+    return parseInt(diffMinute) + "分钟前";
+  }
+  if (diffMinute < todayFar) {
+    // 今天内, 1小时（含）前
+    return parseInt(diffMinute / 60) + "小时前";
+  }
+
+  var diffHour = (now.getTime() - date.getTime()) / 60000 / 60;
+  // 昨天零点和现在的小时差
+  var yesterdayFar = (now.getTime() - today.getTime()) / 60000 / 60 + 24;
+
+  if (diffHour < yesterdayFar) {
+    // 1天（含）前
+    return "昨天";
+  }
+
+  var diffDay = (now.getTime() - date.getTime()) / 60000 / 60 / 24;
+  // 昨天零点和现在的天数差
+  var weekFar = (now.getTime() - today.getTime()) / 60000 / 60 / 24 + 7;
+
+  if (diffDay < weekFar) {
+    // 7天（含）前显示
+    return parseInt(diffDay) + "天前";
+  }
+
+  var diffWeek = (now.getTime() - date.getTime()) / 60000 / 60 / 24 / 7;
+  // 昨天零点和现在的小时差
+  var fourWeekFar = (now.getTime() - today.getTime()) / 60000 / 60 / 24 / 7 + 4;
+
+  if (diffWeek < fourWeekFar) {
+    // 1-4周（含）前显示
+    return parseInt(diffWeek) + "周前";
+  }
+
+
+  var diffYear = now.getFullYear() - date.getFullYear();
+  if (diffYear >= 1) {
+    // 1年以上（含）前显示: “1年前”
+    return "1年前";
+  }
+  var diffMonth = now.getMonth() - date.getMonth();
+  if (diffMonth == 0) {
+    // 相差未满1个月显示: “4周前”
+    return "4周前";
+  }
+  if (diffMonth < 3) {
+    // 1-2个月（含）前显示: “1个月前”
+    return parseInt(diffMonth) + "个月前";
+  }
+  if (diffMonth >= 3) {
+    // 3个月以上（含）前显示: “3个月前”
+    return "3个月前";
+  }
+
+}
+
+var byteChange = function(size)  {
+  var kb = 1024;
+  var mb = kb * kb;
+  if (size > mb) {
+    return toDecimal2(size / mb,2) + ' MB';
+  }
+  if (size > kb) {
+    return toDecimal2(size / kb,2) + ' KB';
+  }
+  return size + ' B'
+
+}
+
+//制保留2位小数，如：2，会在2后面补上00.即2.00  
+function toDecimal2(x)  {
+  var f = parseFloat(x)
+  if (isNaN(f)) {
+    return false
+  }
+  var g = Math.round(x * 100) / 100
+  var s = g.toString()
+  var rs = s.indexOf('.')
+  if (rs < 0) {
+    rs = s.length
+    s += '.'
+  }
+  while (s.length <= rs + 2) {
+    s += '0'
+  }
+  return s
+}
+//保留2位小数  
+function toDecimal(x) {
+  var f = parseFloat(x)
+  if (isNaN(f)) {
+    return false
+  }
+  var g = Math.round(x * 100) / 100
+  return g
+}
+//处理电话号码
+var mobileDeal = function(mobile){
+  var reg = getRegExp('(\d{3})\d{4}(\d{4})');
+  var newMobile = (mobile||'').replace(reg, "$1****$2");
+  return newMobile;
+}
+
+//处理时间
+var timeDeal = function(time){ 
+  var newTime = parseInt(time);
+  if (newTime>9){
+    return newTime
+  }else{
+    return "0" + newTime;
+  }
+}
+module.exports = {
+  formatMillis: formatMillis,
+  byteChange:byteChange,
+  mobileDeal:mobileDeal,
+  timeDeal: timeDeal,
+  toDecimal2: toDecimal2
+}

@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myself/myself",
+    "pages/notice/releaseNotice",
+    "pages/mynotice/mynotice",
+    "pages/sportpk/sportpk"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "跃动在线",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#ff6f18",
+    "borderStyle": "#eee",
+    "position": "bottom",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/assets/home.png",
+        "selectedIconPath": "/assets/selecthome.png",
+        "text": "动态"
+      },
+      {
+        "pagePath": "pages/sportpk/sportpk",
+        "iconPath": "/assets/noselect_pk.png",
+        "selectedIconPath": "/assets/selectpk.png",
+        "text": "pk"
+      },
+      {
+        "pagePath":"pages/myself/myself",
+        "iconPath": "/assets/my.png",
+        "selectedIconPath": "/assets/selectmy.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

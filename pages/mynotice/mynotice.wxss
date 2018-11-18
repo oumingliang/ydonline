@@ -1,0 +1,144 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.usermotto {
+  margin-top: 200px;
+}
+/* pages/notice/look/look.wxss */
+.page-body-info {
+  padding-bottom: 0;
+  /* height: 30%; */
+  margin-top:2%; 
+  border-bottom:1rpx solid #D9D9D9; 
+  padding-bottom:22rpx;
+
+}
+.userinfo-avatar {
+  border-radius: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 4%;
+  border:5rpx solid #fff;
+
+}
+.userinfo-nickname {
+   margin-top: -16%; 
+   font-size: 35rpx;
+   margin-left: 25%;
+} 
+.detail{
+  margin-left: 25%;
+  font-size: 35rpx;
+  margin-right:4%;
+  word-break: break-all;
+}
+.datetime{
+ margin-left: 25%;
+ ont-size: 15rpx;
+ margin-top:22rpx;
+ font-size:30rpx; 
+ word-break:break-all;
+
+}
+.iscreater{
+  margin-left:25%;
+  margin-top:1%;
+  margin-bottom:4%;
+  font-size:26rpx;
+  color:#fff;
+  background:#4f76ec;
+  display:inline-block;
+  padding:2rpx 12rpx;
+}
+.reader{
+margin-left:25%;
+margin-top:1%;
+margin-bottom:4%;
+font-size:26rpx;
+color:#D9D9D9;
+}
+.scroll-view-h{
+  width: 100%;
+  height:calc(100vh - 100rpx);
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.float{
+  height:100rpx;
+  position:relative;
+}
+.addicon{
+  width:60rpx;
+  height:60rpx;
+  position: fixed;
+  left: 80%;
+  bottom: 10%;
+  z-index:1000;
+}
+.upload-item {
+  min-width: 150rpx;
+  min-height: 150rpx;
+  max-width: 150rpx;
+  max-height: 150rpx;
+  background: #f4f4f4;
+  position: relative;
+  margin-top: 40rpx;
+}
+
+ .upload-img {
+  min-width: 260rpx;
+  min-height: 260rpx;
+  max-width: 260rpx;
+  max-height: 260rpx;
+  /* display: block; */
+
+}
+.upload-item+.upload-item {
+  margin-left: 30rpx;
+}
+.image{
+  margin-left:20%;
+}
+
+
+
+/* .userinfo-avatar {
+
+  overflow:hidden;
+  border-radius: 50%;
+  position: absolute;
+  width:60px;
+  height: 60px;
+  display: block;
+  left:50%;
+  top:10%;
+  transform: translate3d(-50%,-50%,0);
+  border: 2px solid #4f76ec;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); */
+
+  /* border-radius: 128rpx; 
+  width: 128rpx;
+  height: 128rpx;
+  margin-left: 40%;
+  /* border-radius:50%; */
+  /* overflow:hidden;
+  display: flex;
+  text-align: center 
+  }*/ 
+/* .nickname{
+  text-align: center;
+  margin-top:40px;
+} */

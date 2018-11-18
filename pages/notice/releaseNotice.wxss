@@ -1,0 +1,377 @@
+/* pages/socialWork/releaseSocialWork.wxss */
+
+.wrap {
+  background: #eee;
+}
+
+.section-block {
+  border-top: 1rpx solid #dedede;
+  background: #fff;
+}
+
+.section-block+.section-block {
+  margin-top: 24rpx;
+}
+
+.section-block .item {
+  padding: 39rpx 30rpx;
+  border-bottom: 1px solid #dedede;
+  display: flex;
+  align-items: center;
+}
+
+.content-placeholder {
+  font-size: 30rpx;
+  color: #999;
+}
+
+.input-number {
+  padding: 24rpx 0 0 24rpx;
+  text-align: right;
+  color: #999;
+  font-size: 24rpx;
+}
+
+.upload-box {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+}
+
+.upload-item {
+  min-width: 150rpx;
+  min-height: 150rpx;
+  max-width: 150rpx;
+  max-height: 150rpx;
+  background: #f4f4f4;
+  position: relative;
+  margin-top: 48rpx;
+}
+
+.upload-item  .upload-img {
+  min-width: 150rpx;
+  min-height: 150rpx;
+  max-width: 150rpx;
+  max-height: 150rpx;
+  display: block;
+}
+
+.upload-item .delete {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.upload-item+.upload-item {
+  margin-left: 30rpx;
+}
+
+.upload-btn .tip {
+  color: #999;
+  font-size: 24rpx;
+  position: absolute;
+  bottom: 12rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.upload-btn .cross-icon {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-2 .item {
+  display: block;
+}
+
+.section-2 .item .content {
+  margin-top: 20rpx;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 0;
+  border: 1px solid #dedede;
+  padding: 26rpx;
+  border-radius: 6rpx;
+}
+
+.section-2 .item .input-1 {
+  border: 1px solid #dedede;
+  border-radius: 8rpx;
+  margin-top: 12rpx;
+  padding: 8rpx 26rpx;
+}
+
+.section-2 .item .input-2 {
+  height: 406rpx;
+}
+
+.section-4 {
+  padding: 30rpx 30rpx;
+}
+
+.section-4 .btn {
+  background: #ff6f18;
+}
+
+.section {
+  display: flex;
+  padding: 10px;
+  font-size: 16px;
+  /* justify-content: center; */
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.section_title {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.section_title view {
+  margin-bottom: 20px;
+  height: 16px;
+  color: #333;
+}
+
+.section_title textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 4px;
+  height: 90px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.section text {
+  width: 30%;
+}
+
+.section input {
+  flex: 1;
+}
+
+.section_add {
+  border-top: 1px solid #ccc;
+  height: 14px;
+  padding: 18px 14px;
+}
+
+.section_choose {
+  display: flex;
+  padding: 10px;
+  font-size: 16px;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.section_choose text {
+  width: 90%;
+}
+
+.section_button {
+  border: none;
+  margin: 20px 0px 66px;
+  height: 90px;
+}
+
+.section_button button {
+  width: 100%;
+  background: #4f76ec;
+  color: #fff;
+  border-radius: 0px;
+}
+
+picker {
+  width: 130px;
+  font-size: 12px;
+}
+
+.place {
+  position: relative;
+  height: 70px;
+  padding: 10px;
+  font-size: 16px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.time {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  height: 32px;
+}
+
+.content_wrap {
+  height: 260px;
+  padding: 10px;
+}
+
+.content_top {
+  height: 260px;
+}
+
+.content_wrap .content {
+  height: 200px;
+  width: 100%;
+  overflow-y: scroll;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.number {
+  margin-top: 10px;
+  right: 0;
+  bottom: 0;
+  float: right;
+  height: 26px;
+  color: #999;
+}
+
+.content_bottom {
+  height: 90px;
+  overflow: hidden;
+  padding: 10px 0px;
+  width: 100%;
+}
+
+.upload_left {
+  position: relative;
+  float: right;
+  width: 70px;
+  height: 70px;
+  background: #f4f4f4;
+}
+
+.upload {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.image_upload {
+  width: 70px;
+  height: 70px;
+  float: right;
+  margin: 0px 10px;
+  position: relative;
+}
+
+.image_upload .delete {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
+.image_upload image.pic {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.border_bottom {
+  height: 12px;
+  width: 100%;
+  background: #eee;
+  border: 1px solid #dedede;
+  border-right: none;
+  border-left: none;
+}
+
+checkbox .wx-checkbox-input {
+  border-radius: 50%; /* 圆角 */
+  width: 40rpx; /* 背景的宽 */
+  height: 40rpx; /* 背景的高 */
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border: none;
+  background: #4f76ec;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  border-radius: 50%; /* 圆角 */
+  width: 0rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 0rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 30rpx; /* 对勾大小 30rpx */
+  color: #fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.choose_radio checkbox-group {
+  margin: 10px 20px;
+}
+
+checkbox-group label {
+  display: inline-block;
+  width: 33%;
+  padding: 10px 0px;
+}
+
+.info {
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.tishi {
+  display: inline-block;
+  font-size: 25rpx;
+  color: #666;
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+  bottom: 7rpx;
+  transform: translateX(-50%);
+}
+
+.uploadimage {
+  position: relative;
+  width: 70px;
+  background-color: #f4f4f4;
+  height: 70px;
+  float: right;
+  margin-right: 20rpx;
+}
+
+.upload {
+  /* height:35px;
+  width:35px;
+  float: right;
+  margin-top:15%;
+  margin-right:30rpx; */
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.phcolor {
+  color: #666;
+}

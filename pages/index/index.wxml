@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<view>
+<!-- bindscrolltolower="upper" -->
+<scroll-view class="scroll-view-h" scroll-y  style="width: 100%"  bindscrolltolower="upper">
+<view class="page-body-info" wx:for="{{allnotice}}">
+    <image class="userinfo-avatar" src="{{item.avatarUrl}}"></image>
+    <view class="userinfo-nickname text-deal wxname">{{item.nickname}}</view>
+    <view class="detail wxcontent">{{item.detail}} </view>
+     <view class="image" wx:if="{{item.imageurl[0]!=''}}">
+    <image wx:for="{{item.imageurl}}" src="{{item}}" mode="aspectFit" class="upload-img" data-index="{{index}}"></image>
+    </view>
+    <view class="datetime wxtime">{{item.datetime}}</view>
+</view>
+</scroll-view>
+
+<view class='float'>
+<image src="../../assets/add.png" class='addicon'  bindtap="add"></image>
+</view>
+
+</view>

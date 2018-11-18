@@ -1,0 +1,12 @@
+.wxc-elip {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.elip--multiple {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

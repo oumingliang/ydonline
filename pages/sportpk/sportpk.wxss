@@ -1,0 +1,99 @@
+/* pages/sportpk/sportpk.wxss */
+/* pages/myself/myself.wxss */
+page{
+  background: #fff
+}
+.userinfo-avatar {
+  border-radius: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 48%;
+  margin-top:4%;
+  margin-bottom: 3%;
+  transform: translateX(-50%);
+}
+.userinfo-nickname {
+  text-align: center;
+  width: 700rpx;
+  /* margin-top:-11%;
+  margin-left:-18%; */
+  font-size:38rpx;  
+  margin-bottom: 5%;
+} 
+.nav{
+  padding-top:8%;
+  padding-left:9%;
+  padding-right:9%;
+  display:flex;
+  border-bottom: 10rpx solid #ff6f18;
+  padding-bottom:5%； 
+}
+
+.center{
+  text-align: center;
+}
+.head{
+  background: #ff6f18;
+  padding-bottom:10%; 
+}
+.white{
+  color: #fff;
+}
+.count{
+  font-size: 35rpx;
+}
+.pk1{
+  background: #fff;
+  padding-top:20%;
+  padding-bottom:5%
+}
+.pk2{
+  background: #fff;
+  padding-top:20%;
+  padding-bottom:20%;
+}
+.share{
+   background: #fff;
+   border: 1px solid #252525;
+   font-size:35rpx;
+   width: 70%;
+   margin-bottom:3%;
+}
+.tishi{
+  font-size:25rpx; 
+}
+.buttonhide{
+  background-color: transparent
+}
+.userinfo-avatar-replace{
+  border-radius: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  margin-top:4%;
+  margin-bottom: 3%
+}
+.group{
+  margin-left: 4%;
+  margin-right:4%;
+  margin-top: 1%;
+}
+.group_tx{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 40rpx
+}
+.group_name{
+   font-size:38rpx;  
+   display: inline-block;
+   margin-left:40rpx;
+}
+.groupsportcount{
+  display:inline-block;
+  margin-left:210rpx;
+  color: #25b927
+}
+.groupname{
+  margin-top:-12%;
+  margin-left:2%;
+  float:left;
+}
