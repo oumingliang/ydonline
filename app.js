@@ -2,7 +2,7 @@
 import loginsource from "api/loginSource"
 App({
   data: {
-    qiniu_domain: 'http://pgwn32i53.bkt.clouddn.com/',//七牛图片外链域名
+    qiniu_domain: 'https://image.catac.cn/',//七牛图片外链域名
     //uptoken生成地址：http://pchou.qiniudn.com/qiniutool/uptoken.html deadline的时间设置长一些
     qiniu_uptoken: 'uxQXOgxXDtF-1uM_V15KQSIky5Xkdww0GhoAksLF:LWUt0HMVbICEDaSOMnMF3YLoUH4=:eyJzY29wZSI6Inlkb25saW5lIiwiZGVhZGxpbmUiOjE4NTU2NzA0MDF9'
 
