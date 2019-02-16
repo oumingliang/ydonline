@@ -5,7 +5,8 @@
     "pages/myself/myself",
     "pages/notice/releaseNotice",
     "pages/mynotice/mynotice",
-    "pages/sportpk/sportpk"
+    "pages/sportpk/sportpk",
+    "pages/weather/index"
 
   ],
   "window":{
@@ -14,10 +15,15 @@
     "navigationBarTitleText": "跃动在线",
     "navigationBarTextStyle":"black"
   },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
   "tabBar": {
     "color": "#333",
     "selectedColor": "#ff6f18",
-    "borderStyle": "#eee",
+    "borderStyle": "white",
     "position": "bottom",
     "backgroundColor": "#fff",
     "list": [
@@ -26,6 +32,12 @@
         "iconPath": "/assets/home.png",
         "selectedIconPath": "/assets/selecthome.png",
         "text": "动态"
+      },
+      {
+        "pagePath": "pages/weather/index",
+        "iconPath": "/assets/bar_a1.png",
+        "selectedIconPath": "/assets/bar_a2.png",
+        "text": "天气"
       },
       {
         "pagePath": "pages/sportpk/sportpk",

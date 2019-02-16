@@ -100,9 +100,7 @@ Page({
    }
 
 
-    wx.showShareMenu({
-      withShareTicket: true
-    })
+ 
 
    
   
@@ -248,6 +246,9 @@ setTimeout(function(){
    * 用户点击右上角分享
    */
     onShareAppMessage: function () {
+      wx.showShareMenu({
+        withShareTicket: true
+      })
       var nowDate = new Date();
       var year = nowDate.getFullYear();
       var month = nowDate.getMonth() + 1 < 10 ? "0" + (nowDate.getMonth() + 1)
@@ -259,7 +260,11 @@ setTimeout(function(){
       return {
         title: '我已经运动了' + this.data.todaysportcount+'步，你敢来PK吗？',
         path: 'pages/sportpk/sportpk',
+        complete: function (res) {
+          console.log(1)
+        },
         success: function (res) {
+          console.log(res)
           var shareTickets = res.shareTickets;
           if (shareTickets.length == 0) {
             return false;
