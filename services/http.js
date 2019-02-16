@@ -1,9 +1,9 @@
 /**
- * 远光党建/九三社员之家
- * HTTP请求的封装，统一处理服务器地址、sessionId等
  * 
- * Created at     : 2018-07-04 09:34:33 
- * Last modified  : zhouzhiming@ygsoft.com
+ * 
+ * 
+ * 
+ * 
  */
 import regeneratorRuntime from '../packages/regenerator/runtime'
 import WXP from '../packages/api-promise/wxp'

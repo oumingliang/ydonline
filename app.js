@@ -2,9 +2,8 @@
 import loginsource from "api/loginSource"
 App({
   data: {
-    amapKey: '0e2dedd5b2f58f482f29f950a25b34b3',//高德key  api：http://lbs.amap.com/api/wx/guide/get-data/regeo
-    heweatherKey: 'f10b214698504bc488893244fa1e6083',//和风天气key  api：http://www.heweather.com/documents/api/s6/weather
-    qiniu_domain: 'https://image.catac.cn/',//七牛图片外链域名
+    amapKey: '0e2dedd5b2f58f482f29f950a25b34b3',//高德key  api：http://lbs.amap.com/api/wx/guide/get-data/regeo    heweatherKey: 'f10b214698504bc488893244fa1e6083',//和风天气key  api：http://www.heweather.com/documents/api/s6/weather    qiniu_domain: 'https://image.catac.cn/',//七牛图片外链域名    qiniu_domain: 'https://image.catac.cn/',//七牛图片外链域名
+    heweatherKey: 'f10b214698504bc488893244fa1e6083',
     //uptoken生成地址：http://pchou.qiniudn.com/qiniutool/uptoken.html deadline的时间设置长一些
     qiniu_uptoken: 'uxQXOgxXDtF-1uM_V15KQSIky5Xkdww0GhoAksLF:LWUt0HMVbICEDaSOMnMF3YLoUH4=:eyJzY29wZSI6Inlkb25saW5lIiwiZGVhZGxpbmUiOjE4NTU2NzA0MDF9'
 
